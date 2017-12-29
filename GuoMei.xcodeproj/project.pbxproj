@@ -150,6 +150,9 @@
 		76C575A01FF5D57A00D2D38A /* DCCommentPicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C5759F1FF5D57A00D2D38A /* DCCommentPicCell.m */; };
 		76C575A31FF5D58D00D2D38A /* DCDetailPartCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C575A21FF5D58D00D2D38A /* DCDetailPartCommentCell.m */; };
 		76C575A61FF5D5F200D2D38A /* DCPartCommentHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C575A51FF5D5F200D2D38A /* DCPartCommentHeadView.m */; };
+		76C575A91FF606BE00D2D38A /* DCHomeRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C575A81FF606BE00D2D38A /* DCHomeRefreshGifHeader.m */; };
+		76C575AC1FF606D700D2D38A /* DCHomeTopToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C575AB1FF606D700D2D38A /* DCHomeTopToolView.m */; };
+		76C575AF1FF606F400D2D38A /* DCNavSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C575AE1FF606F400D2D38A /* DCNavSearchBarView.m */; };
 		76CFA9EE1FF47A5D00373ED2 /* DCBrandSortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFA9ED1FF47A5D00373ED2 /* DCBrandSortCell.m */; };
 		76CFA9F11FF47A7100373ED2 /* DCGoodsSortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFA9F01FF47A7100373ED2 /* DCGoodsSortCell.m */; };
 		76CFA9F41FF47A8700373ED2 /* DCListGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFA9F31FF47A8700373ED2 /* DCListGridCell.m */; };
@@ -477,6 +480,12 @@
 		76C575A21FF5D58D00D2D38A /* DCDetailPartCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDetailPartCommentCell.m; sourceTree = "<group>"; };
 		76C575A41FF5D5F200D2D38A /* DCPartCommentHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCPartCommentHeadView.h; sourceTree = "<group>"; };
 		76C575A51FF5D5F200D2D38A /* DCPartCommentHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCPartCommentHeadView.m; sourceTree = "<group>"; };
+		76C575A71FF606BE00D2D38A /* DCHomeRefreshGifHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCHomeRefreshGifHeader.h; sourceTree = "<group>"; };
+		76C575A81FF606BE00D2D38A /* DCHomeRefreshGifHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCHomeRefreshGifHeader.m; sourceTree = "<group>"; };
+		76C575AA1FF606D700D2D38A /* DCHomeTopToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCHomeTopToolView.h; sourceTree = "<group>"; };
+		76C575AB1FF606D700D2D38A /* DCHomeTopToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCHomeTopToolView.m; sourceTree = "<group>"; };
+		76C575AD1FF606F400D2D38A /* DCNavSearchBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCNavSearchBarView.h; sourceTree = "<group>"; };
+		76C575AE1FF606F400D2D38A /* DCNavSearchBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCNavSearchBarView.m; sourceTree = "<group>"; };
 		76CFA9EC1FF47A5D00373ED2 /* DCBrandSortCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCBrandSortCell.h; sourceTree = "<group>"; };
 		76CFA9ED1FF47A5D00373ED2 /* DCBrandSortCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCBrandSortCell.m; sourceTree = "<group>"; };
 		76CFA9EF1FF47A7100373ED2 /* DCGoodsSortCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCGoodsSortCell.h; sourceTree = "<group>"; };
@@ -1403,6 +1412,51 @@
 			path = FourthSection;
 			sourceTree = "<group>";
 		};
+		76C575B01FF60F6600D2D38A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				76C575B51FF60FA800D2D38A /* Cell */,
+				76C575B41FF60FA200D2D38A /* Foot */,
+				76C575B31FF60F9C00D2D38A /* Head */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		76C575B11FF60F7000D2D38A /* AssististView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AssististView;
+			sourceTree = "<group>";
+		};
+		76C575B21FF60F8100D2D38A /* CusSortLayout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CusSortLayout;
+			sourceTree = "<group>";
+		};
+		76C575B31FF60F9C00D2D38A /* Head */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Head;
+			sourceTree = "<group>";
+		};
+		76C575B41FF60FA200D2D38A /* Foot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foot;
+			sourceTree = "<group>";
+		};
+		76C575B51FF60FA800D2D38A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		76CFA9E91FF47A1000373ED2 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1578,6 +1632,15 @@
 		76E15EC51FF2336C00A4B962 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76C575B21FF60F8100D2D38A /* CusSortLayout */,
+				76C575B11FF60F7000D2D38A /* AssististView */,
+				76C575B01FF60F6600D2D38A /* CollectionView */,
+				76C575AD1FF606F400D2D38A /* DCNavSearchBarView.h */,
+				76C575AE1FF606F400D2D38A /* DCNavSearchBarView.m */,
+				76C575AA1FF606D700D2D38A /* DCHomeTopToolView.h */,
+				76C575AB1FF606D700D2D38A /* DCHomeTopToolView.m */,
+				76C575A71FF606BE00D2D38A /* DCHomeRefreshGifHeader.h */,
+				76C575A81FF606BE00D2D38A /* DCHomeRefreshGifHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2105,7 +2168,9 @@
 				7668EA7B1FEC8F56009D4939 /* DCSpeedy.m in Sources */,
 				7668EA921FEC8F56009D4939 /* SDPhotoBrowser.m in Sources */,
 				761D37E31FF3444F00DDC60F /* DCBeautyShopRecommendCell.m in Sources */,
+				76C575AF1FF606F400D2D38A /* DCNavSearchBarView.m in Sources */,
 				7668EA811FEC8F56009D4939 /* DCTitleRolling.m in Sources */,
+				76C575AC1FF606D700D2D38A /* DCHomeTopToolView.m in Sources */,
 				76C5758E1FF5D2D600D2D38A /* DCShowTypeThreeCell.m in Sources */,
 				7668EA841FEC8F56009D4939 /* JKDBHelper.m in Sources */,
 				7668EA8C1FEC8F56009D4939 /* XWInteractiveTransition.m in Sources */,
@@ -2197,6 +2262,7 @@
 				76E15EC41FF2327E00A4B962 /* DCMyCenterViewController.m in Sources */,
 				761D37E71FF3444F00DDC60F /* DCGroupImageCell.m in Sources */,
 				761D37C61FF340B100DDC60F /* DCBeautyShopItem.m in Sources */,
+				76C575A91FF606BE00D2D38A /* DCHomeRefreshGifHeader.m in Sources */,
 				7668EA801FEC8F56009D4939 /* WJYAlertView.m in Sources */,
 				76E15E9E1FF2146900A4B962 /* DCCenterBeaShopCell.m in Sources */,
 				76C575971FF5D53C00D2D38A /* DCCommentContentCell.m in Sources */,
