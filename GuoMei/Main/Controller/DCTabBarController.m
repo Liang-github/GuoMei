@@ -56,9 +56,8 @@
                             
                             ];
     [childArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
-        
         UIViewController *vc = [NSClassFromString(dict[MallClassKey]) new];
-        //        vc.navigationItem.title = ([dict[MallTitleKey] isEqualToString:@"首页"] || [dict[MallTitleKey] isEqualToString:@"分类"]) ? nil : dict[MallTitleKey];
+        
         DCNavigationController *nav = [[DCNavigationController alloc] initWithRootViewController:vc];
         UITabBarItem *item = nav.tabBarItem;
         

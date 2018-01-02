@@ -8,6 +8,6 @@
 
 #import "DCBaseSetViewController.h"
 
-@interface DCHandPicViewController : DCBaseSetViewController
+@interface DCHandPickViewController : DCBaseSetViewController
 
 @end

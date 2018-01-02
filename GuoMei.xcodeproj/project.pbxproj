@@ -189,7 +189,7 @@
 		76CFAA261FF4BC1B00373ED2 /* DCShareItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFAA251FF4BC1B00373ED2 /* DCShareItemCell.m */; };
 		76CFAA291FF4BF4000373ED2 /* DCFeatureItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFAA281FF4BF4000373ED2 /* DCFeatureItemCell.m */; };
 		76CFAA2F1FF4E66C00373ED2 /* DCCollectionHeaderLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFAA2E1FF4E66C00373ED2 /* DCCollectionHeaderLayout.m */; };
-		76D6E8EC1FFB07B70046BAAE /* DCHandPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8EB1FFB07B70046BAAE /* DCHandPicViewController.m */; };
+		76D6E8EC1FFB07B70046BAAE /* DCHandPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8EB1FFB07B70046BAAE /* DCHandPickViewController.m */; };
 		76D6E8EF1FFB0C2B0046BAAE /* DCGoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8EE1FFB0C2B0046BAAE /* DCGoodDetailViewController.m */; };
 		76D6E8F71FFB0D970046BAAE /* DCGoodsParticularsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8F61FFB0D970046BAAE /* DCGoodsParticularsViewController.m */; };
 		76D6E8FA1FFB0DD50046BAAE /* DCParticularsShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6E8F91FFB0DD50046BAAE /* DCParticularsShowViewController.m */; };
@@ -592,8 +592,8 @@
 		76CFAA281FF4BF4000373ED2 /* DCFeatureItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCFeatureItemCell.m; sourceTree = "<group>"; };
 		76CFAA2D1FF4E66C00373ED2 /* DCCollectionHeaderLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCollectionHeaderLayout.h; sourceTree = "<group>"; };
 		76CFAA2E1FF4E66C00373ED2 /* DCCollectionHeaderLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCCollectionHeaderLayout.m; sourceTree = "<group>"; };
-		76D6E8EA1FFB07B70046BAAE /* DCHandPicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCHandPicViewController.h; sourceTree = "<group>"; };
-		76D6E8EB1FFB07B70046BAAE /* DCHandPicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCHandPicViewController.m; sourceTree = "<group>"; };
+		76D6E8EA1FFB07B70046BAAE /* DCHandPickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCHandPickViewController.h; sourceTree = "<group>"; };
+		76D6E8EB1FFB07B70046BAAE /* DCHandPickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCHandPickViewController.m; sourceTree = "<group>"; };
 		76D6E8ED1FFB0C2B0046BAAE /* DCGoodDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCGoodDetailViewController.h; sourceTree = "<group>"; };
 		76D6E8EE1FFB0C2B0046BAAE /* DCGoodDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCGoodDetailViewController.m; sourceTree = "<group>"; };
 		76D6E8F51FFB0D970046BAAE /* DCGoodsParticularsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCGoodsParticularsViewController.h; sourceTree = "<group>"; };
@@ -1900,8 +1900,8 @@
 		76E15EC71FF2337900A4B962 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				76D6E8EA1FFB07B70046BAAE /* DCHandPicViewController.h */,
-				76D6E8EB1FFB07B70046BAAE /* DCHandPicViewController.m */,
+				76D6E8EA1FFB07B70046BAAE /* DCHandPickViewController.h */,
+				76D6E8EB1FFB07B70046BAAE /* DCHandPickViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2537,7 +2537,7 @@
 				76D6E9251FFB1C8C0046BAAE /* DCShareToViewController.m in Sources */,
 				761D37EF1FF3449D00DDC60F /* DCPageControl.m in Sources */,
 				76D6E9221FFB1C7A0046BAAE /* DCGoodBaseViewController.m in Sources */,
-				76D6E8EC1FFB07B70046BAAE /* DCHandPicViewController.m in Sources */,
+				76D6E8EC1FFB07B70046BAAE /* DCHandPickViewController.m in Sources */,
 				76D6E9101FFB143F0046BAAE /* DCHeaderReusableView.m in Sources */,
 				76E15EAE1FF2151600A4B962 /* DCStateItemFooterView.m in Sources */,
 				76E15EFB1FF23EE200A4B962 /* DCMediaTopToolView.m in Sources */,

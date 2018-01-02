@@ -38,7 +38,6 @@
     bar.titleTextAttributes = attributes;
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
     if (self.childViewControllers.count >= 1) {
         // 返回按钮自定义
         UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -62,7 +61,7 @@
         self.interactivePopGestureRecognizer.delegate = nil;
     }
     // 跳转
-    [self pushViewController:viewController animated:animated];
+    [super pushViewController:viewController animated:animated];
 }
 #pragma mark - 点击
 - (void)backButtonTapClick {

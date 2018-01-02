@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "JKDBModel.h"
+#import "DCTabBarController.h"
+
+#import "RequestTool.h"
+#import "NetworkUnit.h"
+#import <SVProgressHUD.h>
 
 @interface AppDelegate ()
 
@@ -16,10 +22,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[DCTabBarController alloc] init];
+    [self.window makeKeyAndVisible];
+    [self setUpUserData];
+    [self setUpFixiOS11];
     return YES;
 }
-
+- (void)setUpUserData
+{
+    DCUserInfo *userInfo = UserInfoData;
+    if (userInfo.username.length == 0) { //userName为指定id不可改动用来判断是否有用户数据
+        DCUserInfo *userInfo = [[DCUserInfo alloc] init];
+        userInfo.nickname = @"RocketsChen";
+        userInfo.sex = @"男";
+        userInfo.birthDay = @"1996-02-10";
+        userInfo.userimage = @"icon";
+        userInfo.username = @"qq-w923740293";
+        userInfo.defaultAddress = @"中国 上海";
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{//异步保存
+            [userInfo save];
+        });
+    }
+}
+- (void)setUpFixiOS11
+{
+    if (@available(ios 11.0,*)) {
+        UIScrollView.appearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        UITableView.appearance.estimatedRowHeight = 0;
+        UITableView.appearance.estimatedSectionFooterHeight = 0;
+        UITableView.appearance.estimatedSectionHeaderHeight = 0;
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
