@@ -96,7 +96,6 @@ static NSString *const DCGoodsHandheldCellID = @"DCGoodsHandheldCell";
 }
 
 
-#pragma mark - DCItemSortLayoutDelegate
 #pragma mark - 底部高度
 -(CGFloat)dc_HeightOfSectionFooterForIndexPath:(NSIndexPath *)indexPath {
     return DCMargin;

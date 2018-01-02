@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class DCFeatureTitleItem,DCFeatureItem;
+@class DCFeatureTitleItem,DCFeatureList;
 
 @interface DCFeatureItem : NSObject
 
 @property (nonatomic, strong) DCFeatureTitleItem *attr;
 
-@property (nonatomic, strong) NSArray<DCFeatureItem *> *list;
+@property (nonatomic, strong) NSArray<DCFeatureList *> *list;
 
 @end

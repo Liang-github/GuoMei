@@ -53,16 +53,17 @@ static CGFloat _allowance = 30;
 
 - (void)setUpButtonWithFrame:(CGRect)frame
 {
-    _assTouchButtton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_assTouchButtton setBackgroundImage:[UIImage imageNamed:@"icon"] forState:UIControlStateNormal];
-    [_assTouchButtton setBackgroundImage:[UIImage imageNamed:@"icon"] forState:UIControlStateDisabled];
-    [_assTouchButtton setBackgroundImage:[UIImage imageNamed:@"icon"] forState:UIControlStateHighlighted];
-    _assTouchButtton.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
-    [_assTouchButtton addTarget:self action:@selector(assTouchButttonTouch) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:_assTouchButtton];
+    _assTouchButton = [UIButton buttonWithType:UIButtonTypeCustom];
+
+    [_assTouchButton setBackgroundImage:[UIImage imageNamed:@"icon"] forState:UIControlStateNormal];
+    [_assTouchButton setBackgroundImage:[UIImage imageNamed:@"icon"] forState:UIControlStateDisabled];
+    [_assTouchButton setBackgroundImage:[UIImage imageNamed:@"icon"] forState:UIControlStateHighlighted];
+    _assTouchButton.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+    [_assTouchButton addTarget:self action:@selector(assTouchButttonTouch) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:_assTouchButton];
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(changePostion:)];
-    [_assTouchButtton addGestureRecognizer:pan];
+    [_assTouchButton addGestureRecognizer:pan];
     
     self.alpha = 1;
     [self performSelector:@selector(setAlpha) withObject:nil afterDelay:5];
@@ -128,7 +129,7 @@ static CGFloat _allowance = 30;
 
 - (void)beginPoint {
     
-    _assTouchButtton.enabled = NO;
+    _assTouchButton.enabled = NO;
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
     [UIView animateWithDuration:DCDismisTime animations:^{
         self.alpha = 1.0;
@@ -163,7 +164,7 @@ static CGFloat _allowance = 30;
             self.frame = frame;
         }];
     }
-    _assTouchButtton.enabled = YES;
+    _assTouchButton.enabled = YES;
     
 }
 
@@ -199,7 +200,7 @@ static CGFloat _allowance = 30;
         }
     }
     
-    _assTouchButtton.enabled = YES;
+    _assTouchButton.enabled = YES;
     [self performSelector:@selector(setAlpha) withObject:nil afterDelay:3];
 }
 

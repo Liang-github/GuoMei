@@ -14,7 +14,7 @@
 
 @property (nonatomic, copy) NSString *gridTitle;
 
-@property (nonatomic, copy) NSArray *girdTag;
+@property (nonatomic, copy) NSArray *gridTag;
 
 @property (nonatomic, copy) NSString *gridColor;
 
